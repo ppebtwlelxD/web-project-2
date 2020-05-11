@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class NavBar extends React.Component {
+export default class NavBar extends React.Component {
     render() {
       return (
         <nav id="mavbar" className="navbar navbar-dark bg-dark mb-3">

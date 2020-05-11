@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class ProductRow extends React.Component {
+export default class ProductRow extends React.Component {
     render() {
       const product = this.props.product;
   

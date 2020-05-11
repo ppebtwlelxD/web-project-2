@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import * as ProductRow from"./ProductRow.jsx"
 
-class ProductTable extends React.Component {
+export default class ProductTable extends React.Component {
     render() {
       const filterText = this.props.filterText;
       const inStockOnly = this.props.inStockOnly;

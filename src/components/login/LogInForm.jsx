@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-function LogInForm() {
-    return (
-      <form id="LogInForm" action="/action_page.php">
+  export default class LogInForm extends React.Component {
+    render() {
+      return (
+        <div>
+        <form id="LogInForm" action="/action_page.php">
         <label for="user"></label>
         <input type="text" id="user" name="user" value="Username"></input>
         <label for="pword"></label>
@@ -14,5 +16,7 @@ function LogInForm() {
         <br></br>
         <input id="logbutton" type="submit" value="Log in"></input>
       </form>
-    );
+      </div>
+      );
+    }
   }

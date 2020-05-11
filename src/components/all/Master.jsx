@@ -16,7 +16,7 @@ export default class Master extends React.Component {
         </div>
       );
     }
-  }
+  };
   //the things on the
   const PRODUCTS = [
     {

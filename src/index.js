@@ -214,7 +214,11 @@ class NavBar extends React.Component {
 
  //master (last class)
   class Master extends React.Component {
-    render() {
+    render(
+      
+
+
+    ) {
       return (
         <div>
           <NavBar />

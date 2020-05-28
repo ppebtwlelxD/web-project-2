@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import ReactDOM from "react-dom";
 import App from "./App";
 import "./index.css";
-//import { Switch, Scroll, Route } from '/react-router-dom';
+import {
+  BrowserRouter as 
+  Switch,
+  Route,
+} from "react-router-dom";
 
 
 
@@ -209,12 +213,20 @@ class NavBar extends React.Component {
             />{" "}
             Bare bachelors
           </p>
+          <p>
+            <input
+              type="checkbox"
+              checked={this.props.inStockOnly}
+              onChange={this.handleInStockChange}
+            />{" "}
+            Bare internship
+          </p>
         </form>
       );
     }
   }
 
-
+ /*
  //master (last class)
 class Master extends React.Component {
     render(
@@ -222,31 +234,31 @@ class Master extends React.Component {
       return (
         <div>
           <NavBar />
-
+          <Login />
           <FilterableProductTable products={PRODUCTS} />,
         </div>
       );
     }
   };
+*/
 
- /*
-class Main extends Component {
+class Master extends Component {
     render() {
         return (
             <main>
                 <div className="mainWrapper">
-                    <Scroll>
+                    
                         <Switch>
-                            <Route exact path='/' component={ Login }/>
+                            <Route exact path='' component={ Login }/>
                             <Route path='/project' component={ NavBar,FilterableProductTable  }/>
                         </Switch>
-                    </Scroll>
+                    
                 </div>
             </main>
         );
     }
 }
-*/
+
   //the things on the
   const PRODUCTS = [
     {

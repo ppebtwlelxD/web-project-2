@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
+import "./index.css";
 
 
 //navbar
@@ -27,7 +27,7 @@ class NavBar extends React.Component {
     render() {
       return (
         //mmaking the tabel
-        <div id="Login">
+        <div id="login">
         <LogInTitel />
         <LogInText />
         <LogInForm />
@@ -49,7 +49,7 @@ class NavBar extends React.Component {
         <input type="checkbox" id="remeber" name="remeber" value="1"></input>
         <label for="remeber">husk meg</label>
         <br></br>
-        <input id="logbutton" type="submit" value="Log in"></input>
+        <input id="btn" type="submit" value="Log in"></input>
       </form>
       </div>
       );
@@ -68,7 +68,7 @@ class NavBar extends React.Component {
     render() {
       return (
         <div>
-        <h1 id="LogInTitel">log in</h1>;
+        <h1 id="LogInTitel">log in</h1>
         </div>
       );
     }

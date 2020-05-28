@@ -5,9 +5,152 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #F8F8FF;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* NAVBAR */
+.navbarCompany ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4d4d4d;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    font-size: 120%;
+   }
+
+.navbarCompany li {
+    float: left;
+}
+
+.navbarCompany li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbarCompany li a:hover:not(.active) {
+    background-color: rgb(17, 17, 17);
+}
+
+.navbarCompany .active {
+    background-color: #4d4d4d;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  nav li {
+    float: left;
+  }
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+ nav li a:hover:not(.active) {
+      background-color: rgb(17, 17, 17);
+}
+  
+.active {
+      background-color: rgb(77, 73, 73);
+}
+
+/* Login */
+
+.login-form, .content {
+	width: 40%;
+	margin: 0px auto;
+	padding: 20px;
+}
+
+.field {
+	display: block;
+	text-align: left;
+    margin: 3px;
+    font-size: 120%;
+}
+
+.field input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+.btn {
+    margin: 10px;
+	font-size: 15px;
+	color: white;
+	background: #4d4d4d;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+/* TABLE */
+
+.FilterableProductTable {
+    margin: 0px auto;
+    display: block;
+    width: 60%;
+}
+
+.projectTable {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 20px;
+    font-size: 120%;
+}
+
+.projectTable, th, td {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.projectTable th {
+    line-height: 2em;
+    background-color: #4d4d4d;
+    color: white;
+    text-align: left;
+}
+
+.projectTable td, .projectTable th {
+    padding: 8px;
+  }
+
+.projectTable tr:hover td {
+    background-color: #ddd;
+}
+
+.searchBar {
+    margin: 15px;
+    font-size: 120%;
+    float: right;
+}
+
+.projectCheckbox {
+    font-size: 120%;
+    margin-left: 55%;
 }

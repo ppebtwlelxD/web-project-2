@@ -4,14 +4,11 @@ import ReactDOM from "react-dom";
 export default class NavBar extends React.Component {
     render() {
       return (
-        <nav id="mavbar" className="navbar navbar-dark bg-dark mb-3">
-          <a className="navbar-brand" href="/#">
-            Navigation
-          </a>
+        <nav className="navbarCompany">
           <ul>
-            <li>Project</li>
-            <li>company</li>
-            <li>Log Out</li>
+              <li><a href="/#">Project</a></li>
+              <li><a href="/#">Company</a></li>
+              <li><a href="/#">Log Out</a></li>
           </ul>
         </nav>
       );

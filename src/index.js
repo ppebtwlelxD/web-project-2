@@ -1,22 +1,23 @@
-import React from "react";
+import React, { Component } from 'react';
 import ReactDOM from "react-dom";
 import App from "./App";
 import "./index.css";
+//import { Switch, Scroll, Route } from '/react-router-dom';
+
+
+
 
 
 //navbar
 class NavBar extends React.Component {
     render() {
       return (
-        <nav id="mavbar" className="navbar navbar-dark bg-dark mb-3">
-          <a className="navbar-brand" href="/#">
-            Navigation
-          </a>
-          <ul>
-            <li>Project</li>
-            <li>company</li>
-            <li>Log Out</li>
-          </ul>
+        <nav id="navbar" class="navbar navbar-dark bg-dark mb-3">
+        <ul>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#company">Company</a></li>
+          <li><a href="#logOut">Log Out</a></li>
+        </ul>
         </nav>
       );
     }
@@ -191,7 +192,9 @@ class NavBar extends React.Component {
     render() {
       return (
         //making input search form
+    
         <form>
+         <h1>Projekter</h1>
           <input
             type="text"
             placeholder="Search..."
@@ -204,30 +207,46 @@ class NavBar extends React.Component {
               checked={this.props.inStockOnly}
               onChange={this.handleInStockChange}
             />{" "}
-            Only show products in stock
+            Bare bachelors
           </p>
         </form>
       );
     }
   }
-  
+
 
  //master (last class)
-  class Master extends React.Component {
+class Master extends React.Component {
     render(
-      
-
-
     ) {
       return (
         <div>
           <NavBar />
-          <Login />
+
           <FilterableProductTable products={PRODUCTS} />,
         </div>
       );
     }
   };
+
+ /*
+class Main extends Component {
+    render() {
+        return (
+            <main>
+                <div className="mainWrapper">
+                    <Scroll>
+                        <Switch>
+                            <Route exact path='/' component={ Login }/>
+                            <Route path='/project' component={ NavBar,FilterableProductTable  }/>
+                        </Switch>
+                    </Scroll>
+                </div>
+            </main>
+        );
+    }
+}
+*/
   //the things on the
   const PRODUCTS = [
     {

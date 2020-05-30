@@ -249,7 +249,6 @@ class Master extends Component {
                 <div className="mainWrapper">
                     
                         <Switch>
-                            <Route exact path='' component={ Login }/>
                             <Route path='/project' component={ NavBar,FilterableProductTable  }/>
                         </Switch>
                     
